@@ -1,0 +1,41 @@
+{
+  "name": "@ecssc/commitlint-config",
+  "version": "0.0.0",
+  "description": "Shared commitlint config for ECSSC projects",
+  "type": "module",
+  "exports": "./src/index.mjs",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ecssc/commitlint-config.git"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "pre-commit": "lint-staged",
+    "release": "release-it"
+  },
+  "lint-staged": {
+    "*.{mjs,cjs,js,json}": [
+      "prettier --write"
+    ]
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^20.0.0"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^20.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.0.0",
+    "@ecssc/prettier-config": "^0.0.1-alpha.1",
+    "@ecssc/eslint-config": "^0.0.1-alpha.3",
+    "@ecssc/release-it-config": "^0.0.1-alpha.1",
+    "eslint": "^9.17.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "release-it": "^19.0.6"
+  }
+}
