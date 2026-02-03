@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.0.4](https://github.com/ecssc/commitlint-config/compare/0.0.3...0.0.4) (2026-02-03)
+
 ## [0.0.3](https://github.com/ecssc/commitlint-config/compare/0.0.2...0.0.3) (2026-01-30)
 
 ## [0.0.2](//compare/0.0.1...0.0.2) (2025-12-05)
