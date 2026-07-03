@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.5](https://github.com/ecssc/commitlint-config/compare/0.0.4...0.0.5) (2026-07-03)
+
+### Bug Fixes
+
+* patch vulnerable dependencies ([#1](https://github.com/ecssc/commitlint-config/issues/1)) ([2c66690](https://github.com/ecssc/commitlint-config/commit/2c66690dc7429f70587568f5c6fe5a251da322da))
+
 ## [0.0.4](https://github.com/ecssc/commitlint-config/compare/0.0.3...0.0.4) (2026-02-03)
 
 ## [0.0.3](https://github.com/ecssc/commitlint-config/compare/0.0.2...0.0.3) (2026-01-30)
