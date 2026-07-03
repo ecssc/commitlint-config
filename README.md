@@ -1,6 +1,6 @@
 # @ecssc/commitlint-config
 
-Shared commitlint configuration for ECSSC projects. Enforces conventional commit format.
+Shared commitlint configuration for ECSSC projects. Enforces the [Conventional Commits](https://www.conventionalcommits.org) format and ignores automated `release:` commits. Requires @commitlint/cli 20+.
 
 ## Installation
 
@@ -20,19 +20,21 @@ export default {
 
 ## Commit Format
 
-Commits must follow the conventional commits specification:
+Each commit message must start with one of these types:
 
-| Type | Description | Version Bump |
-|------|-------------|--------------|
-| `feat:` | New feature | Minor |
-| `fix:` | Bug fix | Patch |
-| `docs:` | Documentation | None |
-| `style:` | Formatting | None |
-| `refactor:` | Code restructuring | None |
-| `perf:` | Performance improvement | Patch |
-| `test:` | Tests | None |
-| `build:` | Build system | None |
-| `ci:` | CI configuration | None |
-| `chore:` | Maintenance | None |
+| Type | Description |
+|------|-------------|
+| `feat:` | New feature |
+| `fix:` | Bug fix |
+| `perf:` | Performance improvement |
+| `refactor:` | Code restructuring |
+| `docs:` | Documentation |
+| `style:` | Formatting |
+| `test:` | Tests |
+| `build:` | Build system |
+| `ci:` | CI configuration |
+| `chore:` | Maintenance |
 
-Breaking changes use `!` suffix (e.g., `feat!:`) or `BREAKING CHANGE:` in the body, triggering a major version bump.
+Mark a breaking change with a `!` suffix (e.g. `feat!:`) or a `BREAKING CHANGE:` footer.
+
+commitlint only checks this format. Version bumps and changelog grouping are applied by the release tooling (see [`@ecssc/release-it-config`](https://github.com/ecssc/release-it-config)) — typically `feat` for a minor release, `fix` and `perf` for a patch, and a breaking change for a major.
