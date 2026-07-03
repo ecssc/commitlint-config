@@ -7,7 +7,8 @@
   "type": "module",
   "exports": "./src/index.mjs",
   "overrides": {
-    "conventional-changelog-conventionalcommits": "^8.0.0"
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "brace-expansion@1": "^1.1.13"
   },
   "files": [
     "src"
@@ -36,12 +37,12 @@
     "@commitlint/cli": "^20.0.0",
     "@ecssc/eslint-config": "^1.0.0",
     "@ecssc/prettier-config": "^0.1.0",
-    "@ecssc/release-it-config": "^1.0.0",
+    "@ecssc/release-it-config": "^1.0.2",
     "@ecssc/commitlint-config": "^0.0.3",
     "eslint": "^9.39.2",
     "husky": "^9.0.0",
     "lint-staged": "^15.2.2",
     "prettier": "^3.4.2",
-    "release-it": "^19.0.6"
+    "release-it": "^20.2.1"
   }
 }
